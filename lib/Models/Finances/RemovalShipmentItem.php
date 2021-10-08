@@ -64,7 +64,7 @@ class RemovalShipmentItem implements ModelInterface, ArrayAccess
         'removal_shipment_item_id' => null,
 'tax_collection_model' => null,
 'fulfillment_network_sku' => null,
-'quantity' => 'int32',
+'quantity' => 'number',
 'revenue' => null,
 'fee_amount' => null,
 'tax_amount' => null,

@@ -69,7 +69,7 @@ class ShipmentItem implements ModelInterface, ArrayAccess
         'seller_sku' => null,
 'order_item_id' => null,
 'order_adjustment_item_id' => null,
-'quantity_shipped' => 'int32',
+'quantity_shipped' => 'number',
 'item_charge_list' => null,
 'item_charge_adjustment_list' => null,
 'item_fee_list' => null,

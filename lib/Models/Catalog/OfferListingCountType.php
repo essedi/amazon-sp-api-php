@@ -55,7 +55,7 @@ class OfferListingCountType extends Categories implements ModelInterface, ArrayA
      * @var string[]
      */
     protected static $swaggerFormats = [
-        'count' => 'int32',
+        'count' => 'number',
 'condition' => null,    ];
 
     /**

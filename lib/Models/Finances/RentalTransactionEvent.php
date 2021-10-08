@@ -65,7 +65,7 @@ class RentalTransactionEvent implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'amazon_order_id' => null,
 'rental_event_type' => null,
-'extension_length' => 'int32',
+'extension_length' => 'number',
 'posted_date' => null,
 'rental_charge_list' => null,
 'rental_fee_list' => null,

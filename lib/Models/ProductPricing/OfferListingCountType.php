@@ -55,7 +55,7 @@ class OfferListingCountType implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerFormats = [
-        'count' => 'int32',
+        'count' => 'number',
 'condition' => null,    ];
 
     /**

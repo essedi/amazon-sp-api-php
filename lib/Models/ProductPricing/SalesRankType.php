@@ -53,7 +53,7 @@ class SalesRankType implements ModelInterface, ArrayAccess
      */
     protected static $swaggerFormats = [
         'product_category_id' => null,
-'rank' => 'int32',    ];
+'rank' => 'number',    ];
 
     /**
      * Array of property to type mappings. Used for (de)serialization.

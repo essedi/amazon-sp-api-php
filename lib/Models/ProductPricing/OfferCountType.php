@@ -58,7 +58,7 @@ class OfferCountType implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'condition' => null,
 'fulfillment_channel' => null,
-'offer_count' => 'int32',    ];
+'offer_count' => 'number',    ];
 
     /**
      * Array of property to type mappings. Used for (de)serialization.

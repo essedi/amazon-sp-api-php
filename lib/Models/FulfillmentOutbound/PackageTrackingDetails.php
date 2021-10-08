@@ -64,7 +64,7 @@ class PackageTrackingDetails implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerFormats = [
-        'package_number' => 'int32',
+        'package_number' => 'number',
 'tracking_number' => null,
 'customer_tracking_link' => null,
 'carrier_code' => null,

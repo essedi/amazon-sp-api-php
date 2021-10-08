@@ -61,7 +61,7 @@ class Summary implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerFormats = [
-        'total_offer_count' => 'int32',
+        'total_offer_count' => 'number',
 'number_of_offers' => null,
 'lowest_prices' => null,
 'buy_box_prices' => null,

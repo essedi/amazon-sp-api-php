@@ -52,7 +52,7 @@ class Points implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerFormats = [
-        'points_number' => 'int32',
+        'points_number' => 'number',
 'points_monetary_value' => null,    ];
 
     /**

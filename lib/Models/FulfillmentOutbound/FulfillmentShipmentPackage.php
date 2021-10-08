@@ -57,7 +57,7 @@ class FulfillmentShipmentPackage implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerFormats = [
-        'package_number' => 'int32',
+        'package_number' => 'number',
 'carrier_code' => null,
 'tracking_number' => null,
 'estimated_arrival_date' => null,    ];
