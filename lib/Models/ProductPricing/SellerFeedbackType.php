@@ -46,7 +46,7 @@ class SellerFeedbackType implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'seller_positive_feedback_rating' => 'double',
+        'seller_positive_feedback_rating' => 'number',
 'feedback_count' => 'int',    ];
 
     /**
@@ -55,7 +55,7 @@ class SellerFeedbackType implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerFormats = [
-        'seller_positive_feedback_rating' => 'double',
+        'seller_positive_feedback_rating' => 'number',
 'feedback_count' => 'int64',    ];
 
     /**

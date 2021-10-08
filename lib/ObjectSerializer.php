@@ -52,7 +52,7 @@ class ObjectSerializer
                 $getter = $data::getters()[$property];
                 $value = $data->$getter();
                 if (null !== $value
-                    && !in_array($swaggerType, ['DateTime', 'bool', 'boolean', 'byte', 'double', 'float', 'int', 'integer', 'mixed', 'number', 'object', 'string', 'void'], true)
+                    && !in_array($swaggerType, ['DateTime', 'bool', 'boolean', 'byte', 'number', 'float', 'int', 'integer', 'mixed', 'number', 'object', 'string', 'void'], true)
                     && method_exists($swaggerType, 'getAllowableEnumValues')
                     && !in_array($value, $swaggerType::getAllowableEnumValues())) {
                     $imploded = implode("', '", $swaggerType::getAllowableEnumValues());
@@ -260,7 +260,7 @@ class ObjectSerializer
             } else {
                 return null;
             }
-        } elseif (in_array($class, ['DateTime', 'bool', 'boolean', 'byte', 'double', 'float', 'int', 'integer', 'mixed', 'number', 'object', 'string', 'void'], true)) {
+        } elseif (in_array($class, ['DateTime', 'bool', 'boolean', 'byte', 'number', 'float', 'int', 'integer', 'mixed', 'number', 'object', 'string', 'void'], true)) {
             settype($data, $class);
 
             return $data;
