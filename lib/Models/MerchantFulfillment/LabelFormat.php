@@ -44,6 +44,7 @@ class LabelFormat
     public static function getAllowableEnumValues()
     {
         return [
+          "",//allowing empty value
             self::PDF,
 self::PNG,
 self::ZPL203,
