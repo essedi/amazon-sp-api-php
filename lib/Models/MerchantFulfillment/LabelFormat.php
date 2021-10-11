@@ -33,6 +33,8 @@ class LabelFormat
     const PDF = 'PDF';
     const PNG = 'PNG';
     const ZPL203 = 'ZPL203';
+    const EMPTY = '';
+    const ZPL = 'ZPL';
     const ZPL300 = 'ZPL300';
     const SHIPPING_SERVICE_DEFAULT = 'ShippingServiceDefault';
 
@@ -44,11 +46,13 @@ class LabelFormat
     public static function getAllowableEnumValues()
     {
         return [
-          "",//allowing empty value
+          self::EMPTY,
             self::PDF,
-self::PNG,
-self::ZPL203,
-self::ZPL300,
-self::SHIPPING_SERVICE_DEFAULT,        ];
-    }
+            self::PNG,
+            self::ZPL203,
+            self::ZPL300,
+            self::ZPL,
+            self::SHIPPING_SERVICE_DEFAULT,
+          ];
+        }
 }
