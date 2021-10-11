@@ -47,7 +47,7 @@ class CreateShipmentRequest implements ModelInterface, ArrayAccess
      */
     protected static $swaggerTypes = [
         'shipment_request_details' => '\ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\ShipmentRequestDetails',
-'shipping_service_id' => '\ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\ShippingServiceIdentifier',
+'shipping_service_id' => 'string',
 'shipping_service_offer_id' => 'string',
 'hazmat_type' => '\ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\HazmatType',
 'label_format_option' => '\ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\LabelFormatOptionRequest',
