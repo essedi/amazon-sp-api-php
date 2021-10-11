@@ -46,9 +46,9 @@ class Shipment implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'shipment_id' => '\ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\ShipmentId',
-'amazon_order_id' => '\ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\AmazonOrderId',
-'seller_order_id' => '\ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\SellerOrderId',
+        'shipment_id' => 'string',
+'amazon_order_id' => 'string',
+'seller_order_id' => 'string',
 'item_list' => '\ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\ItemList',
 'ship_from_address' => '\ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\Address',
 'ship_to_address' => '\ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\Address',
@@ -58,7 +58,7 @@ class Shipment implements ModelInterface, ArrayAccess
 'shipping_service' => '\ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\ShippingService',
 'label' => '\ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\Label',
 'status' => '\ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\ShipmentStatus',
-'tracking_id' => '\ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\TrackingId',
+'tracking_id' => 'string',
 'created_date' => '\ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\Timestamp',
 'last_updated_date' => '\ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\Timestamp',    ];
 
