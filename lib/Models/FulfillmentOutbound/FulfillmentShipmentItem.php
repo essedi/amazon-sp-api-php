@@ -61,7 +61,7 @@ class FulfillmentShipmentItem implements ModelInterface, ArrayAccess
         'seller_sku' => null,
 'seller_fulfillment_order_item_id' => null,
 'quantity' => null,
-'package_number' => 'number',
+'package_number' => 'int',
 'serial_number' => null,    ];
 
     /**

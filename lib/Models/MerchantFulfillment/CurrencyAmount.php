@@ -47,7 +47,7 @@ class CurrencyAmount implements ModelInterface, ArrayAccess
      */
     protected static $swaggerTypes = [
         'currency_code' => 'string',
-'amount' => 'number',    ];
+'amount' => 'float',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -56,7 +56,7 @@ class CurrencyAmount implements ModelInterface, ArrayAccess
      */
     protected static $swaggerFormats = [
         'currency_code' => null,
-'amount' => 'number',    ];
+'amount' => 'float',    ];
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
