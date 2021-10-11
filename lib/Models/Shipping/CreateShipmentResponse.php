@@ -22,44 +22,47 @@ use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
 use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
- * CreateShipmentResponse Class Doc Comment.
+ * CreateShipmentResponse Class Doc Comment
  *
-
- * @description The response schema for the createShipment operation.
- *
- * @author   Stefan Neuhaus / ClouSale
+ * @category Class
+ * @description Response schema.
+ * @package  Swagger\Client
+ * @author   Swagger Codegen team
+ * @link     https://github.com/swagger-api/swagger-codegen
  */
 class CreateShipmentResponse implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
     /**
-     * The original name of the model.
-     *
-     * @var string
-     */
+      * The original name of the model.
+      *
+      * @var string
+      */
     protected static $swaggerModelName = 'CreateShipmentResponse';
 
     /**
-     * Array of property to type mappings. Used for (de)serialization.
-     *
-     * @var string[]
-     */
+      * Array of property to type mappings. Used for (de)serialization
+      *
+      * @var string[]
+      */
     protected static $swaggerTypes = [
-        'payload' => '\ClouSale\AmazonSellingPartnerAPI\Models\Shipping\CreateShipmentResult',
-'errors' => '\ClouSale\AmazonSellingPartnerAPI\Models\Shipping\ErrorList',    ];
+        'payload' => '\ClouSale\AmazonSellingPartnerAPI\Models\Shipping\Shipment',
+        'errors' => '\ClouSale\AmazonSellingPartnerAPI\Models\Shipping\ErrorList'
+    ];
 
     /**
-     * Array of property to format mappings. Used for (de)serialization.
-     *
-     * @var string[]
-     */
+      * Array of property to format mappings. Used for (de)serialization
+      *
+      * @var string[]
+      */
     protected static $swaggerFormats = [
         'payload' => null,
-'errors' => null,    ];
+        'errors' => null
+    ];
 
     /**
-     * Array of property to type mappings. Used for (de)serialization.
+     * Array of property to type mappings. Used for (de)serialization
      *
      * @return array
      */
@@ -69,7 +72,7 @@ class CreateShipmentResponse implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Array of property to format mappings. Used for (de)serialization.
+     * Array of property to format mappings. Used for (de)serialization
      *
      * @return array
      */
@@ -80,35 +83,38 @@ class CreateShipmentResponse implements ModelInterface, ArrayAccess
 
     /**
      * Array of attributes where the key is the local name,
-     * and the value is the original name.
+     * and the value is the original name
      *
      * @var string[]
      */
     protected static $attributeMap = [
         'payload' => 'payload',
-'errors' => 'errors',    ];
+        'errors' => 'errors'
+    ];
 
     /**
-     * Array of attributes to setter functions (for deserialization of responses).
+     * Array of attributes to setter functions (for deserialization of responses)
      *
      * @var string[]
      */
     protected static $setters = [
         'payload' => 'setPayload',
-'errors' => 'setErrors',    ];
+        'errors' => 'setErrors'
+    ];
 
     /**
-     * Array of attributes to getter functions (for serialization of requests).
+     * Array of attributes to getter functions (for serialization of requests)
      *
      * @var string[]
      */
     protected static $getters = [
         'payload' => 'getPayload',
-'errors' => 'getErrors',    ];
+        'errors' => 'getErrors'
+    ];
 
     /**
      * Array of attributes where the key is the local name,
-     * and the value is the original name.
+     * and the value is the original name
      *
      * @return array
      */
@@ -118,7 +124,7 @@ class CreateShipmentResponse implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Array of attributes to setter functions (for deserialization of responses).
+     * Array of attributes to setter functions (for deserialization of responses)
      *
      * @return array
      */
@@ -128,7 +134,7 @@ class CreateShipmentResponse implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Array of attributes to getter functions (for serialization of requests).
+     * Array of attributes to getter functions (for serialization of requests)
      *
      * @return array
      */
@@ -147,15 +153,19 @@ class CreateShipmentResponse implements ModelInterface, ArrayAccess
         return self::$swaggerModelName;
     }
 
+
+
+
+
     /**
-     * Associative array for storing property values.
+     * Associative array for storing property values
      *
      * @var mixed[]
      */
     protected $container = [];
 
     /**
-     * Constructor.
+     * Constructor
      *
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
@@ -180,19 +190,20 @@ class CreateShipmentResponse implements ModelInterface, ArrayAccess
 
     /**
      * Validate all the properties in the model
-     * return true if all passed.
+     * return true if all passed
      *
      * @return bool True if all properties are valid
      */
     public function valid()
     {
-        return 0 === count($this->listInvalidProperties());
+        return count($this->listInvalidProperties()) === 0;
     }
 
+
     /**
-     * Gets payload.
+     * Gets payload
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Shipping\CreateShipmentResult
+     * @return \Swagger\Client\Model\Shipment
      */
     public function getPayload()
     {
@@ -200,9 +211,9 @@ class CreateShipmentResponse implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Sets payload.
+     * Sets payload
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Shipping\CreateShipmentResult $payload payload
+     * @param \Swagger\Client\Model\Shipment $payload Shipment information.
      *
      * @return $this
      */
@@ -214,9 +225,9 @@ class CreateShipmentResponse implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets errors.
+     * Gets errors
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Shipping\ErrorList
+     * @return \Swagger\Client\Model\ErrorList
      */
     public function getErrors()
     {
@@ -224,9 +235,9 @@ class CreateShipmentResponse implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Sets errors.
+     * Sets errors
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Shipping\ErrorList $errors errors
+     * @param \Swagger\Client\Model\ErrorList $errors One or more unexpected errors occurred during the createShipment operation.
      *
      * @return $this
      */
@@ -236,13 +247,12 @@ class CreateShipmentResponse implements ModelInterface, ArrayAccess
 
         return $this;
     }
-
     /**
      * Returns true if offset exists. False otherwise.
      *
-     * @param int $offset Offset
+     * @param integer $offset Offset
      *
-     * @return bool
+     * @return boolean
      */
     public function offsetExists($offset)
     {
@@ -252,7 +262,7 @@ class CreateShipmentResponse implements ModelInterface, ArrayAccess
     /**
      * Gets offset.
      *
-     * @param int $offset Offset
+     * @param integer $offset Offset
      *
      * @return mixed
      */
@@ -264,8 +274,8 @@ class CreateShipmentResponse implements ModelInterface, ArrayAccess
     /**
      * Sets value based on offset.
      *
-     * @param int   $offset Offset
-     * @param mixed $value  Value to be set
+     * @param integer $offset Offset
+     * @param mixed   $value  Value to be set
      *
      * @return void
      */
@@ -281,7 +291,7 @@ class CreateShipmentResponse implements ModelInterface, ArrayAccess
     /**
      * Unsets offset.
      *
-     * @param int $offset Offset
+     * @param integer $offset Offset
      *
      * @return void
      */
@@ -291,7 +301,7 @@ class CreateShipmentResponse implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets the string presentation of the object.
+     * Gets the string presentation of the object
      *
      * @return string
      */
