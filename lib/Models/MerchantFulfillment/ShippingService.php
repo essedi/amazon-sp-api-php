@@ -48,7 +48,7 @@ class ShippingService implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'shipping_service_name' => 'string',
 'carrier_name' => 'string',
-'shipping_service_id' => '\ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\ShippingServiceIdentifier',
+'shipping_service_id' => 'string',
 'shipping_service_offer_id' => 'string',
 'ship_date' => '\ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\Timestamp',
 'earliest_estimated_delivery_date' => '\ClouSale\AmazonSellingPartnerAPI\Models\MerchantFulfillment\Timestamp',
