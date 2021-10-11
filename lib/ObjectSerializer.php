@@ -56,7 +56,7 @@ class ObjectSerializer
                     && method_exists($swaggerType, 'getAllowableEnumValues')
                     && !in_array($value, $swaggerType::getAllowableEnumValues())) {
                     $imploded = implode("', '", $swaggerType::getAllowableEnumValues());
-                    throw new \InvalidArgumentException("Invalid value for enum '$swaggerType', must be one of: '$imploded'");
+                    throw new \InvalidArgumentException("Invalid value '$data' for enum '$swaggerType', must be one of: '$imploded'");
                 }
                 if (null !== $value) {
                     $values[$data::attributeMap()[$property]] = self::sanitizeForSerialization($value, $swaggerType, $formats[$property]);
@@ -261,6 +261,7 @@ class ObjectSerializer
                 return null;
             }
         } elseif (in_array($class, ['DateTime', 'bool', 'boolean', 'byte', 'number', 'float', 'int', 'integer', 'mixed', 'number', 'object', 'string', 'void'], true)) {
+          log_message("ERROR", "TYPE IS ".$class);
             settype($data, $class);
 
             return $data;
@@ -285,7 +286,7 @@ class ObjectSerializer
         } elseif (method_exists($class, 'getAllowableEnumValues')) {
             if (!in_array($data, $class::getAllowableEnumValues())) {
                 $imploded = implode("', '", $class::getAllowableEnumValues());
-                throw new \InvalidArgumentException("Invalid value for enum '$class', must be one of: '$imploded'");
+                throw new \InvalidArgumentException("Invalid value '$data' for enum '$class', must be one of: '$imploded'");
             }
 
             return $data;
