@@ -167,9 +167,8 @@ class RemovalShipmentItemList implements ModelInterface, ArrayAccess, IterableTy
      */
     public function listInvalidProperties()
     {
-        $invalidProperties = parent::listInvalidProperties();
-
-        return $invalidProperties;
+        
+        return [];
     }
 
     /**

@@ -167,9 +167,8 @@ class AttributeSetList extends Categories implements ModelInterface, ArrayAccess
      */
     public function listInvalidProperties()
     {
-        $invalidProperties = parent::listInvalidProperties();
-
-        return $invalidProperties;
+        
+        return [];
     }
 
     /**
